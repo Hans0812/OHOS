@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+    'use strict';
+
+
+    function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    ask(
+        'You are a bitch ?',
+        function() {
+            alert('Yes!');
+        },
+        function() {
+            alert('No!');
+        }
+    )
+</script>
+
+
+</body>
+
+</html>
